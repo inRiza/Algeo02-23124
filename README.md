@@ -3,7 +3,7 @@
 
 # Penjelasan Program
 
-# Anggota - Kelompok 37 Skibiditify
+# Anggota - Kelompok 31 Skibiditify
 | NIM  | NAMA |
 | ------------- | ------------- |
 | 13523124 | Muhammad Raihan Perdana  |
