@@ -6,7 +6,7 @@
 # Anggota - Kelompok 31 Skibiditify
 | NIM  | NAMA |
 | ------------- | ------------- |
-| 13523124 | Muhammad Raihan Perdana  |
+| 13523124 | Muhammad Raihaan Perdana  |
 | 13523151 | Ardell Aghna Mahendra  |
 | 13523164 | Muhammad Rizain Firdaus  |
 
@@ -83,6 +83,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 Repository : https://github.com/inRiza/Algeo02-23124
 
 Link Contributor
-- Muhammad Raihan Perdana : https://github.com/fliegenhaan
+- Muhammad Raihaan Perdana : https://github.com/fliegenhaan
 - Ardell Aghna Mahendra : https://github.com/ArdellAghna
 - Muhammad Rizain Firdaus : https://github.com/inRiza
