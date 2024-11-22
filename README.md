@@ -1,9 +1,9 @@
 # Tubes Besar 2 IF2123 Aljabar Linier dan Geometri
-> Tugas Besar 2 Kelompok 31 <nama>
+> Tugas Besar 2 Kelompok 31 Skibiditify
 
 # Penjelasan Program
 
-# Anggota - Kelompok 37 BEJE
+# Anggota - Kelompok 37 Skibiditify
 | NIM  | NAMA |
 | ------------- | ------------- |
 | 13523124 | Muhammad Raihan Perdana  |
@@ -27,10 +27,9 @@
 ├── bin
 │
 ├── src
-│   ├── Frontend
-│   │      Main.java
+│   ├── frontend
 │   │
-│   ├── Backend
+│   ├── backend
 │
 ├── test                             -- Berisikan Data Uji
 
@@ -49,6 +48,6 @@
 Repository : https://github.com/inRiza/Algeo02-23124
 
 Link Contributor
-- Muhammad Raihan Perdana : 
+- Muhammad Raihan Perdana : https://github.com/fliegenhaan
 - Ardell Aghna Mahendra : 
 - Muhammad Rizain Firdaus : https://github.com/inRiza
