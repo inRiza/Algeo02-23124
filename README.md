@@ -1,4 +1,4 @@
-# Tubes Besar 2 IF2123 Aljabar Linier dan Geometri
+# Tubes 2 IF2123 Aljabar Linier dan Geometri
 > Tugas Besar 2 Kelompok 31 Skibiditify
 
 # Penjelasan Program
