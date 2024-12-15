@@ -27,7 +27,7 @@ const AboutPage = () => {
           <span className="text-[#1DB954] font-semibold">Skibiditify</span>! 
           Website ini adalah platform yang mengembangkan sistem{" "}
           <span className="font-semibold">Information Retrieval</span> untuk{" "}
-          <span className="italic">audio</span> dan <span className="italic">gambar</span> 
+          <span className="italic">audio</span> dan gambar
           dengan menerapkan konsep <span className="font-semibold">aljabar linear</span>. Sistem 
           yang dibangun memiliki dua fitur utama, yaitu{" "}
           <span className="text-[#1DB954] font-semibold">
@@ -42,8 +42,7 @@ const AboutPage = () => {
           </span>{" "}
           untuk pencarian gambar album. Kedua fitur ini diintegrasikan dalam
           sebuah antarmuka web yang memungkinkan pengguna melakukan pencarian
-          melalui input <span className="italic">audio</span> maupun{" "}
-          <span className="italic">gambar</span>.
+          melalui input <span className="italic">audio</span> maupun{" "}gambar.
         </p>
       </div>
 
