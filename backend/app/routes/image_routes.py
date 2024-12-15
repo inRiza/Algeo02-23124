@@ -1,6 +1,7 @@
 from flask import Blueprint, request, jsonify
 from app.services.image_services import ImageService
 from werkzeug.utils import secure_filename
+from app.config import IMAGE_DATASET_DIR,IMAGE_TEMP_DIR
 import os
 
 bp = Blueprint('image', __name__)
@@ -17,7 +18,7 @@ def upload_image():
 
     try:
         # Save image temporarily
-        temp_path = os.path.join('app/temp', secure_filename(file.filename))
+        temp_path = os.path.join(IMAGE_TEMP_DIR, secure_filename(file.filename))
         file.save(temp_path)
 
         # Process image and get matches

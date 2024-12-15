@@ -39,18 +39,24 @@ export default function MusicPage() {
   const displayedFiles = audioFiles.slice(startIndex, startIndex + ITEMS_PER_PAGE);
 
   const handleQueryResult = (matches: AudioMatch[], time: number) => {
-    const matchedFiles = matches.map(m => ({ 
-      filename: m.filename, 
-      similarity: m.similarity 
-    }));
-    const otherFiles = audioFiles
-      .filter(f => !matches.find(m => m.filename === f.filename))
-      .map(f => ({ filename: f.filename }));
-    
-    setAudioFiles([...matchedFiles, ...otherFiles]);
-    setExecutionTime(time);
-    setCurrentPage(1);
-  };
+    if (matches.length > 0) {
+        // Hanya ambil yang paling mirip
+        const bestMatch = matches[0];
+        
+        // Update audioFiles dengan menempatkan best match di awal
+        const otherFiles = audioFiles
+            .filter(f => f.filename !== bestMatch.filename)
+            .map(f => ({ filename: f.filename }));
+            
+        setAudioFiles([
+            { filename: bestMatch.filename, similarity: bestMatch.similarity },
+            ...otherFiles
+        ]);
+        
+        setExecutionTime(time);
+        setCurrentPage(1);
+    }
+};
 
   if (isLoading) {
     return (

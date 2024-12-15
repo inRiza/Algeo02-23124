@@ -2,8 +2,8 @@
 from flask import Blueprint, request, jsonify
 from werkzeug.utils import secure_filename  # Tambahkan ini
 from app.services.audio_service import AudioService
-from app.utils.file_handler import save_dataset_file, allowed_file
-from app.config import DATASET_DIR, TEMP_DIR
+from app.utils.audio.file_handler import save_dataset_file, allowed_file
+from app.config import AUDIO_DATASET_DIR, AUDIO_TEMP_DIR
 import os
 
 bp = Blueprint('audio', __name__)
@@ -20,7 +20,7 @@ def upload_audio():
     
     try:
         # Save file temporarily
-        temp_path = os.path.join(TEMP_DIR, secure_filename(file.filename))
+        temp_path = os.path.join(AUDIO_TEMP_DIR, secure_filename(file.filename))
         file.save(temp_path)
         
         # Process audio and get matches
@@ -66,7 +66,7 @@ def upload_dataset():
 @bp.route('/dataset', methods=['GET'])
 def get_dataset():
     try:
-        files = [f for f in os.listdir(DATASET_DIR) if allowed_file(f)]
+        files = [f for f in os.listdir(AUDIO_DATASET_DIR) if allowed_file(f)]
         return jsonify(files)
     except Exception as e:
         return jsonify({'error': str(e)}), 500
