@@ -1,10 +1,10 @@
 import os
-from ..config import DATASET_DIR
+from ...config import AUDIO_DATASET_DIR
 
 def scan_midi_files():
     """Scan semua file MIDI dalam dataset folder"""
     midi_files = []
-    for root, _, files in os.walk(DATASET_DIR):
+    for root, _, files in os.walk(AUDIO_DATASET_DIR):
         for file in files:
             if file.endswith(('.mid', '.midi')):
                 midi_files.append(os.path.join(root, file))
