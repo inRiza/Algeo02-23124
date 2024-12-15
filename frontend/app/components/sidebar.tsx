@@ -40,7 +40,7 @@ const SideBar = () => {
           `Found match in ${result.executionTime?.toFixed(2) || 0}ms`
         );
       } else {
-        setUploadStatus('No matches found');
+        setUploadStatus('No matches found above similarity threshold (65%)');
       }
     } catch (error) {
       console.error('Upload error:', error);
