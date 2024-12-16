@@ -177,8 +177,8 @@ class AudioService:
             
             for filename, features in self.dataset_features.items():
                 similarity = self._calculate_similarity(query_features, features)
-                # Hanya tambahkan jika di atas threshold 55%
-                if similarity >= 55.0:  # Explicit threshold check
+                # Hanya tambahkan jika di atas threshold 65%
+                if similarity >= 65.0:  # Explicit threshold check
                     matches.append({
                         'filename': filename,
                         'similarity': similarity
