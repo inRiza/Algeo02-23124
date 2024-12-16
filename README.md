@@ -45,8 +45,22 @@
    ```
 2. This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-First, run the development server:
+First, run the development server
+```bash
+cd frontend
+```
 
+Install dependencies
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+run server
 ```bash
 npm run dev
 # or
@@ -62,6 +76,21 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+Open another terminal for backend
+```bash
+cd backend
+```
+
+install requirements
+```bash
+pip install -r requirements.txt
+```
+
+run server
+```bash
+python run.py
+```
 
 ## Learn More
 
