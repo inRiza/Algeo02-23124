@@ -24,7 +24,7 @@ Algeo02-23124/
 ├── README.md
 │
 ├── bin/
-|   ├── README.md
+│   ├── README.md
 │
 ├── test/            -- Berisikan Data Uji
 │   ├── x (1).mid 
@@ -77,66 +77,65 @@ Algeo02-23124/
 │   ├── x (48).mid 
 │   ├── x (49).mid 
 │   └── x (50).mid
-|
+│
 ├── src/
-|   ├── backend/
-|   │   ├── app/
-|   │   │   ├── routes/
-|   │   │   │   ├── __init__.py
-|   │   │   │   ├── audiou_routes.py
-|   │   │   │   └── image_routes.py
-|   │   │   ├── services/
-|   │   │   │   ├── __init__.py
-|   │   │   │   ├── audio_services.py
-|   │   │   │   └── image_services.py
-|   │   │   ├── utils/
-|   │   │   │   ├── audio/
-|   │   │   │   │   ├── dataset_scanner.py
-|   │   │   │   │   ├── feature_extraction.py
-|   │   │   │   │   ├── file_handler.py
-|   │   │   │   │   ├── tempo_normalizer.py
-|   │   │   │   │   └── window_processor.py
-|   │   │   │   └── image/
-|   │   │   │       ├── feature_extraction.py
-|   │   │   │       ├── grayscale_resizer.py
-|   │   │   │       └── pca_processor.py
-|   │   │   ├── config.py
-|   │   │   └── __init__.py
-|   │   ├── .gitignore
-|   │   ├── requirements.txt
-|   │   └── run.py
-|   |
+│   ├── backend/
+│   │   ├── app/
+│   │   │   ├── routes/
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── audiou_routes.py
+│   │   │   │   └── image_routes.py
+│   │   │   ├── services/
+│   │   │   │   ├── __init__.py
+│   │   │   │   ├── audio_services.py
+│   │   │   │   └── image_services.py
+│   │   │   ├── utils/
+│   │   │   │   ├── audio/
+│   │   │   │   │   ├── dataset_scanner.py
+│   │   │   │   │   ├── feature_extraction.py
+│   │   │   │   │   ├── file_handler.py
+│   │   │   │   │   ├── tempo_normalizer.py
+│   │   │   │   │   └── window_processor.py
+│   │   │   │   └── image/
+│   │   │   │       ├── feature_extraction.py
+│   │   │   │       ├── grayscale_resizer.py
+│   │   │   │       └── pca_processor.py
+│   │   │   ├── config.py
+│   │   │   └── __init__.py
+│   │   ├── .gitignore
+│   │   ├── requirements.txt
+│   │   └── run.py
+│   │
 │   ├── frontend/
-|   │   ├── .eslint.json
-|   │   ├── .gitignore
-|   │   ├── next.config.ts
-|   │   ├── package-lock.json
-|   │   ├── package.json
-|   │   ├── postcss.config.mjs
-|   │   ├── README.md
-|   │   ├── tailwind.config.ts
-|   │   ├── tsconfig.json
-|   │   ├── app/
-|   │   │   ├── album/
-|   │   │   │   └── page.tsx
-|   │   │   ├── components/
-|   │   │   │   ├── midiplayer.tsx
-|   │   │   │   ├── navbar.tsx
-|   │   │   │   ├── navigation.tsx
-|   │   │   │   ├── pagination.tsx
-|   │   │   │   └── sidebar.tsx
-|   │   │   ├── fonts/
-|   │   │   │   ├── GeistMonoVF.woff
-|   │   │   │   └── GestVF.woff
-|   │   │   ├── lib/
-|   │   │   │   ├── api-client.ts
-|   │   │   │   └── type.ts
-|   │   │   └── music/
-|   │   │       └── page.tsx
-|   |   |
-|   │   ├── global.css
-|   │   ├── layout.tsx
-|   │   └── page.tsx
+│   │   ├── .eslint.json
+│   │   ├── .gitignore
+│   │   ├── next.config.ts
+│   │   ├── package-lock.json
+│   │   ├── package.json
+│   │   ├── postcss.config.mjs
+│   │   ├── README.md
+│   │   ├── tailwind.config.ts
+│   │   ├── tsconfig.json
+│   │   ├── app/
+│   │   │   ├── album/
+│   │   │   │   └── page.tsx
+│   │   │   ├── components/
+│   │   │   │   ├── midiplayer.tsx
+│   │   │   │   ├── navbar.tsx
+│   │   │   │   ├── navigation.tsx
+│   │   │   │   ├── pagination.tsx
+│   │   │   │   └── sidebar.tsx
+│   │   │   ├── fonts/
+│   │   │   │   ├── GeistMonoVF.woff
+│   │   │   │   └── GestVF.woff
+│   │   │   ├── lib/
+│   │   │   │   ├── api-client.ts
+│   │   │   │   └── type.ts
+│   │   │   └── music/
+│   │   │       └── page.tsx
+│   │   ├── global.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
 │
 └── doc/
     ├── Algeo02-23124.pdf
