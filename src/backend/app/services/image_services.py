@@ -161,3 +161,29 @@ class ImageService:
     def get_mapper(self):
         """Get current image-to-audio mapping"""
         return self.mapper
+    
+    def get_image_path(self, filename):
+        """
+        Get the full path for an image, ensuring it exists within the dataset directory
+        
+        Args:
+            filename (str): The name of the image file
+            
+        Returns:
+            str: Full path to the image if it exists, None otherwise
+        """
+        try:
+            safe_filename = secure_filename(filename)
+            full_path = os.path.join(IMAGE_DATASET_DIR, safe_filename)
+            
+            if os.path.exists(full_path) and os.path.commonprefix(
+                [os.path.abspath(full_path), os.path.abspath(IMAGE_DATASET_DIR)]
+            ) == os.path.abspath(IMAGE_DATASET_DIR):
+                return full_path
+            
+            print(f"Image not found or access denied: {filename}")
+            return None
+            
+        except Exception as e:
+            print(f"Error getting image path: {str(e)}")
+            return None

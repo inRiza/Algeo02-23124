@@ -113,3 +113,21 @@ def upload_query():
         })
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+
+@bp.route('/view/<filename>')
+def view_image(filename):
+    """Serve an image from the dataset"""
+    try:
+        # Get the full path from the image service to ensure proper security
+        image_path = image_service.get_image_path(filename)
+        if not image_path:
+            return jsonify({'error': 'Image not found'}), 404
+        
+        # Send the file with the appropriate mimetype
+        return send_file(
+            image_path,
+            mimetype='image/*',  # Let the browser detect the specific image type
+            as_attachment=False
+        )
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
