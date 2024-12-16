@@ -79,7 +79,6 @@ export default function AlbumPage() {
             
             if (result.matches.length === 0) {
                 setUploadStatus('No matches found for your query');
-                // Optionally show all albums again
                 await loadInitialDataset();
                 return;
             }
@@ -177,7 +176,7 @@ export default function AlbumPage() {
                         className="bg-[#1DB954] text-white px-4 py-2 rounded-full w-full hover:bg-opacity-80 transition-colors flex items-center justify-center gap-2"
                         onClick={() => queryInputRef.current?.click()}
                     >
-                        <FaImage /> Query Image
+                        <FaImage /> Upload Query
                     </button>
                 </div>
 

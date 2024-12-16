@@ -102,6 +102,7 @@ const SideBar = () => {
           onChange={handleQuerySelect}
           accept={isAlbumPage ? ".jpg,.jpeg,.png" : ".mid,.midi"}
           className="hidden"
+          disabled={isAlbumPage}
         />
         <button
           className="bg-[#1DB954] text-white px-4 py-2 rounded-full w-full hover:bg-opacity-80 transition-colors flex items-center justify-center gap-2 disabled:opacity-50"
@@ -121,6 +122,7 @@ const SideBar = () => {
           accept={isAlbumPage ? ".jpg,.jpeg,.png" : ".mid,.midi"}
           multiple
           className="hidden"
+          disabled={isAlbumPage}
         />
         <button
           className={`w-full text-left py-2 px-4 rounded hover:bg-[#282828] transition-colors flex items-center gap-2 ${isUploading ? 'opacity-50' : ''}`}
@@ -138,6 +140,7 @@ const SideBar = () => {
               onChange={handleMapperUpload}
               accept=".txt,.json"
               className="hidden"
+              disabled={isAlbumPage}
             />
             <button
               className="w-full text-left py-2 px-4 rounded hover:bg-[#282828] transition-colors flex items-center gap-2"
