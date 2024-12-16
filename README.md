@@ -153,6 +153,7 @@ Algeo02-23124/
 
 First, run the development server
 ```bash
+cd src
 cd frontend
 ```
 
@@ -185,7 +186,14 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 Open another terminal for backend
 ```bash
+cd src
 cd backend
+```
+
+Activate Virtual Environment
+```bash
+python -m venv venv
+venv\Scripts\activate
 ```
 
 install requirements
@@ -214,10 +222,12 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 
-# Links
-Repository : https://github.com/inRiza/Algeo02-23124
+# Link dan Bonus yang dikerjakan
+Repository : https://github.com/inRiza/Algeo02-23124  
+Bonus Video : [Indo Viral Terbaru!](https://youtu.be/p_oxlAVveUk?si=A_t78H4znie3WKK9)  
+Bonus Kreativitas : Home Page & About page
 
 Link Contributor
-- Muhammad Raihaan Perdana : https://github.com/fliegenhaan
-- Ardell Aghna Mahendra : https://github.com/ArdellAghna
-- Muhammad Rizain Firdaus : https://github.com/inRiza
+- Muhammad Raihaan Perdana : https://github.com/fliegenhaan  
+- Ardell Aghna Mahendra : https://github.com/ArdellAghna  
+- Muhammad Rizain Firdaus : https://github.com/inRiza  
