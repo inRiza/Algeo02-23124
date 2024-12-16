@@ -75,5 +75,11 @@ export const imageApi = {
             body: formData,
         });
         if (!response.ok) throw new Error('Failed to upload mapper');
+    },
+    
+    async getMapper(): Promise<Record<string, string>> {
+        const response = await fetch(`${API_BASE_URL}/image/mapper`);
+        if (!response.ok) throw new Error('Failed to fetch mapper');
+        return response.json();
     }
 };

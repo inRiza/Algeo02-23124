@@ -6,6 +6,7 @@ import { FaImage, FaUpload, FaMusic } from 'react-icons/fa';
 import { RiFileListLine, RiSearchLine } from 'react-icons/ri';
 
 const ITEMS_PER_PAGE = 12;
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
 
 interface AlbumItem {
     filename: string;
@@ -240,12 +241,12 @@ export default function AlbumPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {displayedAlbums.map((album) => (
                         <div
-                            key={album.filename}  // Using filename as unique key
+                            key={album.filename}  
                             className="bg-[#282828] p-4 rounded-lg group hover:bg-[#282828]/80 transition-colors"
                         >
                             <div className="relative bg-[#3E3E3E] w-full aspect-square rounded-md mb-4">
                                 <img
-                                    src={`/api/images/${album.filename}`}
+                                    src={`${API_URL}/api/image/view/${album.filename}`}
                                     alt={album.filename}
                                     className="w-full h-full object-cover rounded-md"
                                 />
@@ -273,8 +274,8 @@ export default function AlbumPage() {
                         </div>
                     ))}
             </div>
-)}
-
+        )}
+        
             <div className="mt-6 flex items-center justify-center gap-4">
                 <button
                     className="text-[#B3B3B3] hover:text-white transition-colors disabled:opacity-50"
