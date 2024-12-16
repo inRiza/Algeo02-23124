@@ -26,7 +26,7 @@ Algeo02-23124/
 ├── bin/
 │   ├── README.md
 │
-├── test/            -- Berisikan Data Uji
+├── test/
 │   ├── x (1).mid 
 │   ├── x (2).mid 
 │   ├── x (3).mid 
@@ -138,8 +138,7 @@ Algeo02-23124/
 │   │   └── page.tsx
 │
 └── doc/
-    ├── Algeo02-23124.pdf
-    └── README.md
+    └── Algeo02-23124.pdf
 
 ```
 
