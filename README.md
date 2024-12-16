@@ -18,21 +18,126 @@
 
 # Struktur Program
 ```bash
-│ README.md
-├── .gitignore
-├── cover.jpg
+Algeo02-23124/
 │
-├── docs                              -- Berisikan Laporan 
-│    └─── Laporan 
+├── README.md
 │
-├── bin
+├── bin/
 │
-├── src
-│   ├── frontend
-│   │
-│   ├── backend
+├── test/
+│   ├── x (1).mid 
+│   ├── x (2).mid 
+│   ├── x (3).mid 
+│   ├── x (4).mid 
+│   ├── x (5).mid 
+│   ├── x (6).mid 
+│   ├── x (7).mid 
+│   ├── x (8).mid 
+│   ├── x (9).mid 
+│   ├── x (10).mid 
+│   ├── x (11).mid 
+│   ├── x (12).mid 
+│   ├── x (13).mid 
+│   ├── x (14).mid 
+│   ├── x (15).mid 
+│   ├── x (16).mid 
+│   ├── x (17).mid 
+│   ├── x (18).mid 
+│   ├── x (19).mid 
+│   ├── x (20).mid 
+│   ├── x (21).mid 
+│   ├── x (22).mid 
+│   ├── x (23).mid 
+│   ├── x (24).mid 
+│   ├── x (25).mid 
+│   ├── x (26).mid 
+│   ├── x (27).mid 
+│   ├── x (28).mid 
+│   ├── x (29).mid 
+│   ├── x (30).mid 
+│   ├── x (31).mid 
+│   ├── x (32).mid 
+│   ├── x (33).mid 
+│   ├── x (34).mid 
+│   ├── x (35).mid 
+│   ├── x (36).mid 
+│   ├── x (37).mid 
+│   ├── x (38).mid 
+│   ├── x (39).mid 
+│   ├── x (40).mid 
+│   ├── x (41).mid 
+│   ├── x (42).mid 
+│   ├── x (43).mid 
+│   ├── x (44).mid 
+│   ├── x (45).mid 
+│   ├── x (46).mid 
+│   ├── x (47).mid 
+│   ├── x (48).mid 
+│   ├── x (49).mid 
+│   └── x (50).mid
 │
-├── test                             -- Berisikan Data Uji
+├── backend/
+│   ├── app/
+│   │   ├── routes/
+│   │   │   ├── __init__.py
+│   │   │   ├── audiou_routes.py
+│   │   │   └── image_routes.py
+│   │   ├── services/
+│   │   │   ├── __init__.py
+│   │   │   ├── audio_services.py
+│   │   │   └── image_services.py
+│   │   ├── utils/
+│   │   │   ├── audio/
+│   │   │   │   ├── dataset_scanner.py
+│   │   │   │   ├── feature_extraction.py
+│   │   │   │   ├── file_handler.py
+│   │   │   │   ├── tempo_normalizer.py
+│   │   │   │   └── window_processor.py
+│   │   │   └── image/
+│   │   │       ├── feature_extraction.py
+│   │   │       ├── grayscale_resizer.py
+│   │   │       └── pca_processor.py
+│   │   ├── config.py
+│   │   └── __init__.py
+│   ├── .gitignore
+│   ├── requirements.txt
+│   └── run.py
+│
+├── frontend/
+│   ├── .eslint.json
+│   ├── .gitignore
+│   ├── next.config.ts
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── postcss.config.mjs
+│   ├── README.md
+│   ├── tailwind.config.ts
+│   ├── tsconfig.json
+│   ├── app/
+│   │   ├── album/
+│   │   │   └── page.tsx
+│   │   ├── components/
+│   │   │   ├── midiplayer.tsx
+│   │   │   ├── navbar.tsx
+│   │   │   ├── navigation.tsx
+│   │   │   ├── pagination.tsx
+│   │   │   └── sidebar.tsx
+│   │   ├── fonts/
+│   │   │   ├── GeistMonoVF.woff
+│   │   │   └── GestVF.woff
+│   │   ├── lib/
+│   │   │   ├── api-client.ts
+│   │   │   └── type.ts
+│   │   └── music/
+│   │       └── page.tsx
+│   ├── global.css
+│   ├── layout.tsx
+│   └── page.tsx
+│
+└── doc/
+    ├── Algeo02-23124.pdf
+    └── README.md
+                            -- Berisikan Data Uji
 
 ```
 
