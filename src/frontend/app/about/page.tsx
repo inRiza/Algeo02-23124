@@ -1,8 +1,9 @@
-"use client"
+"use client";
+
 import React, { useEffect } from "react";
-import Image from "next/image"; // Import Next.js Image
-import AOS from "aos"; // Import AOS
-import "aos/dist/aos.css"; // Import AOS CSS
+import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import ppRaihaan from "../public/profileRaihaan.jpeg";
 import ppArdell from "../public/profileArdell.jpeg";
@@ -11,8 +12,8 @@ import ppRizain from "../public/profileRizain.jpeg";
 const AboutPage = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Durasi animasi
-      once: true, // Animasi hanya dijalankan sekali
+      duration: 1000,
+      once: true,
     });
   }, []);
 
@@ -23,26 +24,26 @@ const AboutPage = () => {
           About the Website
         </h1>
         <p className="text-lg leading-relaxed">
-          Selamat datang di{" "}
+          Welcome to{" "}
           <span className="text-[#1DB954] font-semibold">Skibiditify</span>! 
-          Website ini adalah platform yang mengembangkan sistem{" "}
-          <span className="font-semibold">Information Retrieval</span> untuk{" "}
-          <span className="italic">audio</span> dan gambar
-          dengan menerapkan konsep <span className="font-semibold">aljabar linear</span>. Sistem 
-          yang dibangun memiliki dua fitur utama, yaitu{" "}
+          This website is a platform that develops a{" "}
+          <span className="font-semibold">Information Retrieval</span> system for{" "}
+          <span>audio</span> and images
+          by applying the concept of <span className="font-semibold">linear algebra</span>. The system
+          built has two main features{" "}
           <span className="text-[#1DB954] font-semibold">
             Music Information Retrieval (MIR)
           </span>{" "}
-          menggunakan <span className="font-semibold">Query by Humming</span> dan{" "}
+          using <span className="font-semibold">Query by Humming</span> and{" "}
           <span className="text-[#1DB954] font-semibold">
             Image Retrieval
           </span>{" "}
-          menggunakan <span className="font-semibold">
+          using <span className="font-semibold">
             Principal Component Analysis (PCA)
           </span>{" "}
-          untuk pencarian gambar album. Kedua fitur ini diintegrasikan dalam
-          sebuah antarmuka web yang memungkinkan pengguna melakukan pencarian
-          melalui input <span className="italic">audio</span> maupun{" "}gambar.
+          for album image search. These two features are integrated into
+          a web interface that allows users to search using both{" "}
+          <span>audio</span> and{" "}images.
         </p>
       </div>
 
@@ -51,7 +52,6 @@ const AboutPage = () => {
       </div>
 
       <div className="flex flex-wrap justify-center gap-8">
-        {/* Card 1 */}
         <div className="bg-[#282828] rounded-lg shadow-lg p-4 w-64 text-center" data-aos="flip-left" data-aos-delay="300">
           <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
             <Image
@@ -66,7 +66,6 @@ const AboutPage = () => {
           <p className="text-[#1DB954] font-medium">NIM: 13523124</p>
         </div>
 
-        {/* Card 2 */}
         <div className="bg-[#282828] rounded-lg shadow-lg p-4 w-64 text-center" data-aos="flip-left" data-aos-delay="400">
           <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
             <Image
@@ -81,7 +80,6 @@ const AboutPage = () => {
           <p className="text-[#1DB954] font-medium">NIM: 13523151</p>
         </div>
 
-        {/* Card 3 */}
         <div className="bg-[#282828] rounded-lg shadow-lg p-4 w-64 text-center" data-aos="flip-left" data-aos-delay="500">
           <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
             <Image
