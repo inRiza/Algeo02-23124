@@ -113,22 +113,22 @@ export default function MusicPage() {
       )}
 
       {/* Audio Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2">
         {displayedFiles.map((file) => (
           <div
             key={file.filename}
-            className="bg-[#282828] p-4 rounded-lg group hover:bg-[#282828]/80 transition-colors"
+            className="bg-[#282828] p-2 rounded-lg group hover:bg-[#282828]/80 transition-colors"
           >
-            <div className="relative bg-[#3E3E3E] w-full aspect-video rounded-md mb-4 flex items-center justify-center">
-              <FaMusic className="text-4xl text-[#1DB954]" />
+            <div className="relative bg-[#3E3E3E] w-full aspect-square rounded-md mb-2 flex items-center justify-center">
+              <FaMusic className="text-3xl text-[#1DB954]" />
               {file.similarity && (
-                <span className="text-[#1DB954] absolute top-2 right-2 bg-[#282828] px-2 py-1 rounded-full text-sm">
+                <span className="text-[#1DB954] absolute top-2 right-2 bg-[#282828] px-1 py-0.5 rounded-full text-xs">
                   {file.similarity.toFixed(1)}% Match
                 </span>
               )}
             </div>
             <div className="flex items-center justify-between">
-              <span className="text-[#B3B3B3] group-hover:text-white transition-colors truncate flex-1">
+              <span className="text-sm text-[#B3B3B3] group-hover:text-white transition-colors truncate flex-1">
                 {file.filename}
               </span>
               <MidiPlayer midiUrl={`/api/audio/play/${file.filename}`} />
@@ -136,6 +136,7 @@ export default function MusicPage() {
           </div>
         ))}
       </div>
+      
 
       {/* Pagination Controls */}
       {filteredFiles.length > 0 && (
