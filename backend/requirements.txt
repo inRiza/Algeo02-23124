@@ -5,6 +5,7 @@ librosa>=0.8.1
 pretty-midi>=0.2.9
 scipy>=1.7.1
 Pillow>=8.2.0
-scikit-learn>=0.24.2
+scikit-learn>=1.0.0  
 python-magic>=0.4.27
 python-magic-bin>=0.4.14; platform_system == "Windows"
+opencv-python>=4.5.0 
